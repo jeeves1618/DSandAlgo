@@ -1,0 +1,19 @@
+{
+  "name": "dsandalgo",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeeves1618/DSandAlgo.git"
+  },
+  "author": "Vijay Ponnusamy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeeves1618/DSandAlgo/issues"
+  },
+  "homepage": "https://github.com/jeeves1618/DSandAlgo#readme"
+}

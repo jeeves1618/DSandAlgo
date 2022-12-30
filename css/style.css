@@ -1,11 +1,10 @@
 /**   L I T E    M O D E   **/
 body {
-  font-size: 16px;
   /*newlook*/
   color: #61122f;
   /*newlook*/
-  background-color: white;
-  font-family: "Oxygen", sans-serif;
+  background-color: rgb(44, 41, 38);
+  font-family: "Open Sans", sans-serif;
 }
 #a-element-behind-logo {
   display: inline-block;
@@ -14,7 +13,7 @@ body {
 /**Header**/
 #header-nav {
   /*background-color: #fdc426;*/
-  background-color: #0071dc;
+  background-color: rgb(29, 26, 24);
   border-radius: 0;
   border: 0;
   /* Make the nav bar fixed */
@@ -26,6 +25,7 @@ body {
 
 #logo-img {
   background: url("../img/HDlogo.jpg") no-repeat;
+  display: none;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100px;
@@ -35,10 +35,13 @@ body {
 
 .navbar-brand {
   padding-top: 25px;
+  height: 110px;
+  align-items: center;
+  float: none;
 }
 .road-map-summary {
   display: block;
-  color: #004f9a;
+  color: #264653;
   width: 100%;
   text-align: center;
 }
@@ -49,40 +52,31 @@ body {
   border: 0;
 }
 
-#jumbotran-main-text {
-  position: relative;
-  text-align: center;
-  font-size: 3em;
-}
-
-#jumbotran-sub-text p {
-  position: relative;
-  text-align: center;
-  font-size: 1.25em;
-}
-
-#jumbotran-main-text hr {
-  width: 40%;
-  /*color: #951c49;*/
-  color: white;
-}
 .navbar-brand h1 {
   /*Restaurant Name*/
-  font-family: "Libre Bodoni", serif;
+  font-family: "Open Sans", sans-serif;
   /*color: #951c49;*/
-  color: white;
-  font-size: 1.75em;
+  font-size: 3rem;
   font-weight: bolder;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+  float: none;
   /*text-shadow: 1px 1px 1px #222;*/
   margin-top: 10;
   margin-bottom: 0;
+  padding-bottom: 35px;
   display: block;
   line-height: 0.75;
+  text-align: center;
 }
 
 .navbar-brand a:hover,
 .navbar-brand a:focus {
   text-decoration: none;
+}
+
+.navbar-brand a {
+  float: none !important;
 }
 
 .navbar-brand p {
@@ -98,7 +92,7 @@ body {
 }
 
 .navbar-brand li .active {
-  background: #004f9a;
+  background: #264653;
 }
 
 #nav-list {
@@ -112,7 +106,7 @@ body {
 #nav-list a:hover,
 a:active,
 a:focus {
-  background: #004f9a;
+  background: #264653;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -133,6 +127,9 @@ a:focus {
   color: #ffc220;
   text-align: right;
   padding-right: 15px;
+}
+.navbar-header {
+  width: 100%;
 }
 
 .navbar-header button.navbar-toggle,
@@ -180,25 +177,37 @@ a:focus {
 }
 /* END FOOTER */
 /* Overflow hidden will ensure that nothing comes out of the tile*/
-#java-tile,
-#html-tile,
-#devops-tile,
-#db-tile,
-#react-tile,
-#spring-tile {
+#bigo-tile,
+#array-tile,
+#hash-tile,
+#linked-tile,
+#stack-tile,
+#tree-tile,
+#graph-tile,
+#recur-tile,
+#sort-tile,
+#search-tile,
+#dynamic-tile,
+#greedy-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3f0c1f;
+  background-color: rgb(44, 41, 38);
   overflow: hidden;
 }
-#java-tile:hover,
-#html-tile:hover,
-#devops-tile:hover,
-#db-tile:hover,
-#react-tile:hover,
-#spring-tile:hover {
+#bigo-tile:hover,
+#array-tile:hover,
+#hash-tile:hover,
+#linked-tile:hover,
+#stack-tile:hover,
+#tree-tile:hover,
+#graph-tile:hover,
+#recur-tile:hover,
+#sort-tile:hover,
+#search-tile:hover,
+#dynamic-tile:hover,
+#greedy-tile:hover {
   box-shadow: 0 1px 15px 1px #3f0c1f;
 }
 
@@ -207,48 +216,79 @@ a:focus {
   vertical-align: bottom;
 }
 
-#java-tile {
-  background: url("../img/java_tile.jpg") no-repeat;
+#bigo-tile {
+  background: url("../img/bigo_tile.jpg") no-repeat;
   background-position: center;
+  background-size: contain;
 }
-#html-tile {
-  background: url("../img/html_tile.jpg") no-repeat;
+#array-tile {
+  background: url("../img/array_tile.jpg") no-repeat;
   background-position: center;
+  background-size: contain;
 }
-#devops-tile {
-  background: url("../img/devops_tile.jpg") no-repeat;
+#hash-tile {
+  background: url("../img/hash_tile.jpg") no-repeat;
   background-position: center;
+  background-size: cover;
 }
-#db-tile {
-  background: url("../img/db_tile.jpg") no-repeat;
+#linked-tile {
+  background: url("../img/linked_tile.jpg") no-repeat;
   background-position: center;
+  background-size: contain;
 }
-#react-tile {
-  background: url("../img/react_tile.jpg") no-repeat;
+#stack-tile {
+  background: url("../img/stack_tile.jpg") no-repeat;
   background-position: center;
+  background-size: cover;
 }
-#spring-tile {
-  background: url("../img/spring_tile.jpg") no-repeat;
+#tree-tile {
+  background: url("../img/tree_tile.jpg") no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
-#bg-jumbotron {
-  background: url("../img/jumbotran_1200.jpg") no-repeat;
+#graph-tile {
+  background: url("../img/graph_tile.jpg") no-repeat;
   background-position: center;
+  background-size: cover;
 }
-
-/*new look*/
-#jumbotran-main-text,
-#jumbotran-sub-text {
-  color: white;
-  padding-top: 80px;
+#recur-tile {
+  background: url("../img/recur_tile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#java-tile span,
-#html-tile span,
-#devops-tile span,
-#db-tile span,
-#react-tile span,
-#spring-tile span {
+#sort-tile {
+  background: url("../img/sort_tile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#search-tile {
+  background: url("../img/search_tile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#dynamic-tile {
+  background: url("../img/dynamic_tile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#greedy-tile {
+  background: url("../img/greedy_tile.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#bigo-tile span,
+#array-tile span,
+#hash-tile span,
+#linked-tile span,
+#stack-tile span,
+#tree-tile span,
+#graph-tile span,
+#recur-tile span,
+#sort-tile span,
+#search-tile span,
+#dynamic-tile span,
+#greedy-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -256,22 +296,11 @@ a:focus {
   text-align: center;
   font-size: 1.6em;
   text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
+  background-color: rgb(29, 26, 24);
+  color: rgb(238, 164, 80);
+  opacity: 1;
 }
 
-#bg-jumbotron span {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
-}
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
@@ -512,7 +541,7 @@ h3.menu-item-title {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 0.75;
-    max-width: 175px;
+    max-width: auto;
     line-height: 1.2;
     word-wrap: break-word;
     margin-left: 0px;
@@ -576,7 +605,7 @@ h3.menu-item-title {
     padding: 10px;
     border: 2px solid #ffc220;
     background-color: white;
-    color: #0071dc;
+    color: #264653;
   }
 
   #xs-deliver {
@@ -633,7 +662,7 @@ h3.menu-item-title {
   /* End Footer */
   .navbar-brand h1 {
     /* Restaurant name */
-    align-items: left;
+    align-items: center;
     padding-top: 10px;
     /* font-size: 5vw;1vw = 1% of viewport width */
   }
@@ -668,7 +697,7 @@ h3.menu-item-title {
     padding: 10px;
     border: 2px solid #ffc220;
     background-color: white;
-    color: #0071dc;
+    color: #264653;
   }
 
   #xs-deliver {
@@ -685,12 +714,12 @@ h3.menu-item-title {
     border: 2px solid #3f0c1f;
   }
 
-  #java-tile,
+  #bigo-tile,
   #devops-tile,
   #db-tile,
   #react-tile,
-  #spring-tile,
-  #html-tile {
+  #hash-tile,
+  #array-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -861,12 +890,12 @@ h3.menu-item-title {
   }
   /* End Footer */
   /* Home page */
-  #java-tile,
-  #html-tile,
+  #bigo-tile,
+  #array-tile,
   #devops-tile,
   #db-tile,
   #react-tile,
-  #spring-tile {
+  #hash-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
@@ -892,7 +921,7 @@ h3.menu-item-title {
     padding-bottom: 5px;
     border: 2px solid #ffc220;
     background-color: white;
-    color: #0071dc;
+    color: #264653;
   }
 
   #xs-deliver {
@@ -954,7 +983,7 @@ h3.menu-item-title {
 
   hr {
     width: 60%;
-    color: #0071dc;
+    color: #264653;
   }
   .menu-item-details {
     font-size: 0.9em;
