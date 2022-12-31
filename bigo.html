@@ -192,19 +192,19 @@
               <div class="topic-item-content">
                 <h2 class="content">O(1) Notation</h2>
                 <p>
-                  This
+                  When the time complexity is a function of constant time, be it
+                  O(1) or O(2), independent of the input elements, we call it
+                  O(1). The
                   <a
-                    href="https://github.com/jeeves1618/DSandAlgo/blob/master/exercises/BigO.js"
+                    href="https://github.com/jeeves1618/DSandAlgo/blob/master/exercises/Oof1.js"
                     >piece of code</a
                   >
-                  attempts to measure the performance in terms of elapsed time
-                  (in milli seconds). This measure is dependent on the hardware
-                  resources and CPU availability and cannot be standardized
-                  across machines or across different times in the same machine.
+                  explains O(1). What ever the number of the inputs are, we
+                  perform only one operation.
                 </p>
                 <p>
-                  Big O standardizes the measure across the CPUs by counting the
-                  operations for an array of inputs.
+                  So, it qualifies as O(1) time complexity operation. But, is
+                  the space complexity also 1?
                 </p>
               </div>
             </article>
@@ -216,7 +216,7 @@
                 <p>
                   As you can see in this
                   <a
-                    href="https://github.com/jeeves1618/DSandAlgo/blob/master/exercises/BigO.js"
+                    href="https://github.com/jeeves1618/DSandAlgo/blob/master/exercises/OofN.js"
                     >piece of code</a
                   >
                   the mumber of operations increases linearly with the number of
@@ -228,6 +228,53 @@
                   This is also called a <strong>linear time notation</strong>.
                   That is, as the number of inputs increases, the number of
                   operations increases in linear proportion.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="topic-item">
+            <article>
+              <div class="topic-item-content">
+                <h2 class="content">Four Rules of Big O</h2>
+                <p>
+                  1. Always consider the worst case. In searching through an
+                  array of n elements, always consider the case where the
+                  element you are searching for is the nth element. Since there
+                  is a possibility of iterating till nth element, the time
+                  complexity is always O(N)
+                </p>
+                <p>
+                  2. Ignore the constant number of iterations. For instance, if
+                  you are iterating an annual journal entry file once (O(N)) and
+                  then have an iteration for 365 days in an year, you can safely
+                  ignore the 365 iterations. Because, that is not going to scale
+                  up with the inputs.
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="topic-item">
+            <article>
+              <div class="topic-item-content">
+                <h2 class="content">Four Rules of Big O - Cont...</h2>
+                <p>
+                  3. Different inputs should be considered separately. For
+                  instance, if you are iterating the same input twice, it will
+                  become O(2N) and since we have to ignore the constants, it
+                  will become O(N). But, if you are iterating on two inputs, a
+                  and b, they should be considered separately. It will be
+                  O(a+b).
+                </p>
+                <p>
+                  4. Drop the non dominant terms. In
+                  <a
+                    href="https://github.com/jeeves1618/DSandAlgo/blob/master/exercises/logpairsofarray.js"
+                    >this example</a
+                  >, we are iterating the array once to print the elements. We
+                  are then having nested loop to print all the pairs. So, it is
+                  basically O(N + N^2). Out of these N^2 is the most dominant
+                  term. So, we can ignore O(N) and say this program has the time
+                  complexity of O(N^2).
                 </p>
               </div>
             </article>
