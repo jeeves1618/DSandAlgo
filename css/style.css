@@ -51,11 +51,7 @@ body {
   border-radius: 0;
   border: 0;
 }
-p .language-text {
-  font-family: "Courier New", Courier, monospace;
-  background-color: rgb(44, 41, 38);
-  color: white;
-}
+
 .navbar-brand h1 {
   /*Restaurant Name*/
   font-family: "Open Sans", sans-serif;
