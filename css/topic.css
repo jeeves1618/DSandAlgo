@@ -7,7 +7,16 @@ body {
 a {
   text-decoration: none;
 }
-
+.language-text {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(44, 41, 38);
+  color: white;
+}
+table {
+  border: 1px;
+  border-width: 1px;
+  border-color: rgb(44, 41, 38);
+}
 #main-header {
   height: 5rem;
   display: flex;

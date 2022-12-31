@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoodFood</title>
+    <title>Big O</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
@@ -17,7 +17,8 @@
       <a href="index.html" id="logo">Data Structures & Algorithms</a>
       <nav>
         <ul>
-          <li><a href="">Online Resources</a></li>
+          <li><a href="">Books</a></li>
+          <li><a href="">Courses</a></li>
         </ul>
       </nav>
       <a href="#side-drawer" class="menu-btn"
@@ -31,8 +32,8 @@
       </header>
       <nav>
         <ul>
-          <li><a href="">Browse Meals</a></li>
-          <li><a href="">My Orders</a></li>
+          <li><a href="">Books</a></li>
+          <li><a href="">Courses</a></li>
         </ul>
       </nav>
     </aside>
@@ -43,24 +44,86 @@
           <li class="food-item">
             <article>
               <div class="food-item-content">
-                <h2>Parota Mutton Chukka</h2>
-                <p class="content">Add to Cart</p>
+                <h2 class="content">Introduction</h2>
+                <p>
+                  A good code should be readable and scalable. Big O is used to measure the scalability of the code. 
+                </p>
+                <p >
+                  Big O Asymptotic Notation, or simply the Big O notation,
+                  describes the worst-case running time of a program. We compute
+                  the Big-O of an algorithm by counting how many iterations an
+                  algorithm will take in the worst-case scenario with an input
+                  of N. We typically consult the Big-O because we must always
+                  plan for the worst case.
+                </p>
+                <p>Here is the link to <a href="https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent" target="_blank"> summary of Big O</a> from AtoZ Mastery site</p>
               </div>
             </article>
           </li>
           <li class="food-item">
             <article>
               <div class="food-item-content">
-                <h2>Chicken Kotthu Parota</h2>
-                <p class="content">Add to Cart</p>
+                <h2 class="content">The notations</h2>
+                <p><code class="language-text">O(1)</code> Constant - no loops</p>
+                <p><code class="language-text">O(log N)</code> Logarithmic - usually searching algorithms have log n if they are sorted (Binary Search)</p>
+                <p><code class="language-text">O(n)</code> Linear - for loops, while loops through n items</p>
+                <p><code class="language-text">O(n log(n))</code> Log Linear - usually sorting operations</p>
+                <p><code class="language-text">O(n^2)</code> Quadratic - every element in a collection needs to be compared to ever other element. Two nested loops</p>
+                <p><code class="language-text">O(2^n)</code> Exponential - recursive algorithms that solves a problem of size N</p>
+                <p><code class="language-text">O(n!)</code> Factorial - you are adding a loop for every element</p>
               </div>
             </article>
           </li>
           <li class="food-item">
             <article>
               <div class="food-item-content">
-                <h2>Thoothukudi Set Parota</h2>
-                <p class="content">Add to Cart</p>
+                <h2 class="content">What it means?</h2>
+                <table>
+                  <thead>
+                  <tr>
+                  <th>Big O</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                  <td>1</td>
+                  <td>Constant</td>
+                  <td>statement, one line of code</td>
+                  </tr>
+                  <tr>
+                  <td>log(n)</td>
+                  <td>Logarithmic</td>
+                  <td>Divide and conquer (binary search)</td>
+                  </tr>
+                  <tr>
+                  <td>n</td>
+                  <td>Linear</td>
+                  <td>Loop</td>
+                  </tr>
+                  <tr>
+                  <td>n*log(n)</td>
+                  <td>Linearithmic</td>
+                  <td>Effective sorting algorithms</td>
+                  </tr>
+                  <tr>
+                  <td>n^2</td>
+                  <td>Quadratic</td>
+                  <td>Double loop</td>
+                  </tr>
+                  <tr>
+                  <td>n^3</td>
+                  <td>Cubic</td>
+                  <td>Triple loop</td>
+                  </tr>
+                  <tr>
+                  <td>2^n</td>
+                  <td>Exponential</td>
+                  <td>Complex full search</td>
+                  </tr>
+                  </tbody>
+                  </table></p>
               </div>
             </article>
           </li>

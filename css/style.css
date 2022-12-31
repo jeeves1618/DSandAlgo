@@ -51,7 +51,11 @@ body {
   border-radius: 0;
   border: 0;
 }
-
+p .language-text {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(44, 41, 38);
+  color: white;
+}
 .navbar-brand h1 {
   /*Restaurant Name*/
   font-family: "Open Sans", sans-serif;
@@ -154,7 +158,8 @@ a:focus {
 .panel-footer div.row {
   margin-bottom: 35px;
   /*newlook*/
-  color: white;
+  background-color: rgb(29, 26, 24);
+  color: rgb(238, 164, 80);
 }
 #hours,
 #address {
@@ -275,7 +280,7 @@ a:focus {
 #greedy-tile {
   background: url("../img/greedy_tile.jpg") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #bigo-tile span,
 #array-tile span,
@@ -310,169 +315,6 @@ a:focus {
   background-color: #ffc220 !important;
   width: 200px;
 }
-/* MENU CATEGORIES PAGE */
-.category-tile {
-  position: relative;
-  border: 0px solid #3f0c1f;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px;
-  box-shadow: 0 0 10px #3f0c1f;
-}
-.category-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
-}
-.category-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-
-#menu-categories-title + div {
-  margin-bottom: 50px;
-}
-
-#menu-categories-title {
-  margin-top: 0px;
-}
-#cart-title {
-  margin-top: 60px;
-}
-/* END MENU CATEGORIES PAGE */
-
-/* SINGLE CATEGORY PAGE */
-.menu-item-tile {
-  margin-bottom: 25px;
-}
-.menu-item-tile hr {
-  width: 80%;
-  color: #951c49;
-}
-.menu-item-tile .menu-item-price {
-  font-size: 1.1em;
-  text-align: center;
-  margin-top: 0px;
-  margin-right: -15px;
-}
-.menu-item-tile .menu-item-price span {
-  font-size: 0.6em;
-}
-.menu-item-photo {
-  position: relative;
-  border: 0px solid #3f0c1f;
-  box-shadow: 0 0 10px #3f0c1f;
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 250px;
-}
-.menu-item-photo div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100px;
-  font-size: 1em;
-  background-color: #557c3e;
-  text-align: center;
-}
-
-.shop-item-photo {
-  position: relative;
-  border: 0px solid #3f0c1f;
-  box-shadow: 0 0 10px #3f0c1f;
-  overflow: hidden;
-  padding: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 75px;
-}
-.shop-item-photo div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0px;
-  background-color: #557c3e;
-  text-align: center;
-}
-
-.shop-item-total {
-  position: relative;
-  border: 0px solid #3f0c1f;
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: 25%;
-  margin-bottom: 20px;
-  max-width: 285px;
-}
-.menu-item-description {
-  padding-right: 30px;
-  height: 250px;
-}
-.road-map-description {
-  padding-right: 30px;
-  height: 100px;
-}
-h3.menu-item-title {
-  margin: 0 0 10px;
-}
-.menu-item-details {
-  font-size: 0.9em;
-}
-
-.menu-item-photo a:hover,
-.menu-item-photo a:active,
-.menu-item-photo a {
-  color: white;
-}
-
-/* END SINGLE CATEGORY PAGE */
-/* Start Success Page */
-#success-title {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#numberOfCourses,
-#packsize,
-#pricelabelofcourses {
-  display: inline-block;
-  color: #61122f;
-  width: 150px;
-  text-align: left;
-  /*newlook*/
-  border: 1px solid white;
-}
-
-[id^="quantityselected"],
-[id^="PackSize"],
-[id^="priceofsweetpacks"] {
-  color: #61122f;
-  width: 80px;
-}
-
-[id^="priceofsweetpacks"] {
-  text-align: right;
-}
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited {
-  color: #61122f;
-}
-/* End Success Page */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -690,28 +532,12 @@ h3.menu-item-title {
     height: 130px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #ffc220;
-    background-color: white;
-    color: #264653;
-  }
-
   #xs-deliver {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 0.7em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-  }
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-    box-shadow: 0 0 50px #3f0c1f;
-    border: 2px solid #3f0c1f;
   }
 
   #bigo-tile,
