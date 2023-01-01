@@ -39,12 +39,6 @@ body {
   align-items: center;
   float: none;
 }
-.road-map-summary {
-  display: block;
-  color: #264653;
-  width: 100%;
-  text-align: center;
-}
 
 .card {
   /* Overriding the edges of the card */
@@ -53,16 +47,13 @@ body {
 }
 
 .navbar-brand h1 {
-  /*Restaurant Name*/
   font-family: "Open Sans", sans-serif;
-  /*color: #951c49;*/
   font-size: 3rem;
   font-weight: bolder;
   color: rgb(238, 164, 80);
   text-transform: uppercase;
   float: none;
   /*text-shadow: 1px 1px 1px #222;*/
-  margin-top: 10;
   margin-bottom: 0;
   padding-bottom: 35px;
   display: block;
@@ -114,20 +105,7 @@ a:focus {
 #nav-no-of-items-cart {
   font-size: 0.5em;
 }
-#phone {
-  margin-top: 5px;
-}
-#phone a {
-  /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div {
-  /*Reach out to us */
-  color: #ffc220;
-  text-align: right;
-  padding-right: 15px;
-}
+
 .navbar-header {
   width: 100%;
 }
@@ -176,7 +154,13 @@ a:focus {
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
-/* END FOOTER */
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 80);
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
 /* Overflow hidden will ensure that nothing comes out of the tile*/
 #bigo-tile,
 #array-tile,
@@ -220,12 +204,12 @@ a:focus {
 #bigo-tile {
   background: url("../img/bigo_tile.jpg") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #array-tile {
   background: url("../img/array_tile.jpg") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #hash-tile {
   background: url("../img/hash_tile.jpg") no-repeat;
@@ -235,7 +219,7 @@ a:focus {
 #linked-tile {
   background: url("../img/linked_tile.jpg") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 #stack-tile {
   background: url("../img/stack_tile.jpg") no-repeat;
@@ -369,13 +353,11 @@ a:focus {
   }
 
   #nvbr01 h1 {
-    /*Restaurant Name*/
-    font-family: "Libre Bodoni", serif;
-    /*color: #951c49;*/
-    color: white;
-    font-size: 1.75em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
     font-weight: bolder;
-    /*text-shadow: 1px 1px 1px #222;*/
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 0.75;
@@ -413,17 +395,16 @@ a:focus {
   }
 
   #nvbr01 h1 {
-    /*Restaurant Name*/
-    font-family: "Libre Bodoni", serif;
-    /*color: #951c49;*/
-    color: white;
-    font-size: 1.75em;
-    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
     text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     line-height: 1.2;
-    max-width: 175px;
+
     word-wrap: break-word;
   }
 
@@ -537,11 +518,17 @@ a:focus {
   }
 
   #bigo-tile,
-  #devops-tile,
-  #db-tile,
-  #react-tile,
+  #array-tile,
   #hash-tile,
-  #array-tile {
+  #linked-tile,
+  #stack-tile,
+  #tree-tile,
+  #graph-tile,
+  #recur-tile,
+  #sort-tile,
+  #search-tile,
+  #dynamic-tile,
+  #greedy-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -566,17 +553,14 @@ a:focus {
   }
 
   #nvbr01 h1 {
-    /*Restaurant Name*/
-    font-family: "Libre Bodoni", serif;
-    /*color: #951c49;*/
-    color: white;
-    font-size: 1.55em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
     font-weight: bolder;
-    /*text-shadow: 1px 1px 1px #222;*/
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 0.75;
-    max-width: 175px;
     line-height: 1.2;
     word-wrap: break-word;
     margin-left: 0px;
@@ -714,10 +698,16 @@ a:focus {
   /* Home page */
   #bigo-tile,
   #array-tile,
-  #devops-tile,
-  #db-tile,
-  #react-tile,
-  #hash-tile {
+  #hash-tile,
+  #linked-tile,
+  #stack-tile,
+  #tree-tile,
+  #graph-tile,
+  #recur-tile,
+  #sort-tile,
+  #search-tile,
+  #dynamic-tile,
+  #greedy-tile {
     width: 280px;
     margin: 0 auto 15px;
   }
